@@ -7,10 +7,10 @@ class Message:
     
 class FormattedMessage(Message):
     def __contains__(self, str):
-        return str in self.message.lower()
+        return str.lower() in self.message.lower()
 
 m1 = Message("Hey mademoiselle !")
-m2 = FormattedMessage()
+m2 = FormattedMessage("Hey mademoiselle !")
 
 print("hey" in m1)
-print("hey" in m2)
+print("maDEMoiselle" in m2)

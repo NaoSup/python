@@ -12,6 +12,6 @@ with open('autolib.csv') as csvfile:
         dict[line[12]] += int(line[1])
       else:
         dict.update({line[12]: int(line[1])})
-  print dict
+  print(dict)
 
 
